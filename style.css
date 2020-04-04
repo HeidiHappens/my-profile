@@ -1,6 +1,6 @@
 /* Write your CSS here */
 body{
-	background : rgb (247,247,247);
+	background : rgb(249,249,249);
 	font-family: 'Roboto', sans-serif;
 	color: #4E4D5C;
 	text-align: center;
@@ -10,16 +10,21 @@ body{
 h1{
 	font-family: 'Shadows Into Light', cursive;
 	color: #057CF8;
-	font-size: 40px;
+	font-size: 50px;
+	text-shadow: 1.5px 1.5px white;
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
 
 p{
-	font-weight:100;
+	font-weight: 300;
 }
 
 h2{
 	color: #FF6584;
 	font-family: 'Shadows Into Light', cursive;
+	font-size: 27px;
+	text-shadow: 1.5px 1.5px white;
 }
 
 a{
@@ -35,18 +40,49 @@ a{
 }
 
 #banner p {
-	margin-bottom: 30px;
+	font-size: 20px;
+	margin-top: 0px;
+	margin-bottom: 40px;
+}
+
+#banner img {
+	background-color: rgb(247,247,247);
+	border: 5px solid white;
+	padding: 15px;
+	border-radius: 50px;
+	box-shadow: 3px 3px 3px rgb(200, 200, 200);
 }
 
 .btn {
+	background-color: rgb(247,247,247);
 	border: 5px solid white;
 	padding: 10px;
+	margin-bottom: 50px;
+	border-radius: 5px;
+	box-shadow: 0px 1px 4px rgb(255, 199, 199);
 }
 
 .btn:hover {
 	text-decoration: none;
 	color: #ffaaa5;
 	background-color: white;
+}
+
+.comps {
+	margin-top: 40px;
+}
+
+.card p {
+	font-weight: 400;
+	padding: 10px;
+}
+
+.card {
+	background: white;
+	padding: 50px 20px 20px 20px;
+	border-radius: 8px;
+	margin: 0px 20px 10px 20px;
+	box-shadow: 3px 3px 3px rgb(240, 240, 240);
 }
 
 .cards {
@@ -59,5 +95,21 @@ a{
 
 #footer {
 	background-color: #fde2e2;
-	padding: 2px;
+	padding: 1px;
 }
+
+/*les écrans de largeur inférieure à 992 pixels*/
+@media(max-width: 992px){
+  .cards{
+  width: 750px;
+  }
+}
+
+/*les écrans de largeur inférieure à 768 pixels*/
+@media(max-width: 768px){
+  .cards{
+  width: 90%;
+  grid-template-columns: 1fr;
+  }
+}
+
