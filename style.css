@@ -1,0 +1,63 @@
+/* Write your CSS here */
+body{
+	background : rgb (247,247,247);
+	font-family: 'Roboto', sans-serif;
+	color: #4E4D5C;
+	text-align: center;
+	margin: 0px;
+}
+
+h1{
+	font-family: 'Shadows Into Light', cursive;
+	color: #057CF8;
+	font-size: 40px;
+}
+
+p{
+	font-weight:100;
+}
+
+h2{
+	color: #FF6584;
+	font-family: 'Shadows Into Light', cursive;
+}
+
+a{
+	text-decoration: none;
+	color: #6B64FF;
+	font-size: 15px;
+}
+
+#banner {
+	background-image: url("images/pexels-photo-62693.jpeg");
+	background-size: cover;
+	padding: 30px;
+}
+
+#banner p {
+	margin-bottom: 30px;
+}
+
+.btn {
+	border: 5px solid white;
+	padding: 10px;
+}
+
+.btn:hover {
+	text-decoration: none;
+	color: #ffaaa5;
+	background-color: white;
+}
+
+.cards {
+  margin: 15px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  width: 1000px;
+}
+
+#footer {
+	background-color: #fde2e2;
+	padding: 2px;
+}
